@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>operadoeres aritmeticos</title>
+    <script>
+    
+    //inputs de informaões
+     var nome=prompt('digite seu nome')
+     var altura=prompt('digite sua altura em cm')
+     var peso=prompt('digite seu peso kg')
+     
+    
+     //conversão das strings para float
+     var altura=parseFloat(altura)
+     var peso=parseFloat(peso)
+
+     //conversão da altura de cm p m
+     altura=altura/100
+
+     //calculo IMC
+     var massa= peso/(altura*altura)
+
+     //classificação de faixas descritivas
+
+     if(massa<16)
+     {classificação="Peso baixo, muito grave"}
+    
+     else if(massa>=16&&massa<=16.99)
+     { classificação="Peso baixo,grave"}
+    
+     else if(massa>=17&&massa<=18.49)
+     { classificação="Peso baixo"}
+    
+    else if(massa>=18.50&&massa<=24.99)
+     {classificação= "Peso normal"}
+    
+     else if(massa>=25&&massa<=29.99)
+     {classificação="sobrepeso"}
+    
+    else if(massa>=30&&massa<=34.99)
+     { classificação="obesidade grau 1"}
+     
+     else if(massa>=35&&massa<=39.99)
+     { classificação="obesidade grau 2"}
+     
+     else
+     { classificação="obesidade grau 3"}
+
+     //mensagem de saida
+     document.write(nome+" possui indice de massa corporal igaul a " +massa+" sendo classificado como "+classificação)
+
+    
+
+ </script>
+</head>
+<body>
+    
+</body>
+</html>
