@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funções anonimas</title>
+    <script>
+    function exibirArtigo(id,callbackSucesso,CallbackErro){
+        //recuperar o id via requisição http
+        if(true){
+            callbackSucesso('funções de callback em JS')
+        }else{
+            CallbackErro('erro ao recuperar os dados')
+        }
+    }
+    var callbackSucesso=function(){
+
+    }
+    var CallbackErro=function(){
+
+    }
+    exibirArtigo(1,callbackSucesso,CallbackErro)
+
+ </script>
+</head>
+<body>
+    
+</body>
+</html>
