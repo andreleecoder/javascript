@@ -46,12 +46,23 @@
 var data1= new Date(2019,0,13)
 
 var data2= new Date(2019,7,13)
+
 document.write(data1.toString())
 document.write('<hr/>')
 document.write(data2.toString())
+document.write('<hr/> <br/>')
+
+document.write(data1.getTime())
+document.write('<hr/>')
+document.write(data2.getTime())
+document.write('<hr/> <br/>')
+document.write(Math.abs(data1.getTime()-data2.getTime()))
+
+
  </script>
 </head>
 <body>
     
 </body>
+
 </html>
