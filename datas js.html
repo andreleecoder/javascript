@@ -17,9 +17,38 @@
     document.write(data.getFullYear())
     document.write('<br/>') 
     
+   //adicionar ou remover dias
+   document.write(data.toString())
+   data.setDate(data.getDate()+1)
+   document.write('<hr/>') 
+   document.write(data.toString())
+   document.write('<hr/>') 
+   document.write('<br/>') 
    
+   //adicionar ou remover meses
+   document.write(data.toString())
+   data.setMonth(data.getMonth()+1)
+   document.write('<hr/>') 
+   document.write(data.toString())
+   document.write('<hr/>') 
+   document.write('<br/>')
   
+  //adicionar ou remover meses
+  document.write(data.toString())
+   data.setFullYear(data.getFullYear()+1)
+   document.write('<hr/>') 
+   document.write(data.toString())
+   document.write('<hr/>') 
+   document.write('<br/>')
+   document.write('<br/>')
 
+//dias entre uma data e outra
+var data1= new Date(2019,0,13)
+
+var data2= new Date(2019,7,13)
+document.write(data1.toString())
+document.write('<hr/>')
+document.write(data2.toString())
  </script>
 </head>
 <body>
