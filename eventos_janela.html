@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body onscroll="console.log('evento disparado')">
-<div style="height:3000px; width:125px; background:#ccc;"></div>
-</body>
-</html>
+    <title>Eventos no janela</title>
+    <script>
+        function acao1(){
+            alert(' pressionou')
+        }
+        function acao2(){
+            alert('segurou')
+        }
+        function acao3(){
+            alert('soltou')
+        }
+
+
+    </script>
+    </head>
+    <body>
+       <input onkeydown="acao1()"onkeypress="acao2()"onkeyup="acao3()" type="text">
+    </body>
+
+    </html>
