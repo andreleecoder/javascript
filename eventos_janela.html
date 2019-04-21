@@ -6,21 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eventos no janela</title>
     <script>
-        function acao1(){
-            alert(' pressionou')
-        }
-        function acao2(){
-            alert('segurou')
-        }
-        function acao3(){
-            alert('soltou')
-        }
-
+   
 
     </script>
     </head>
-    <body>
-       <input onkeydown="acao1()"onkeypress="acao2()"onkeyup="acao3()" type="text">
+    <body onscroll="console.log('evento disparado')" onresize="console.log('evento disparado')">
+        <div  style="background:purple;width:150px;height:3000px;"></div>
+     
     </body>
 
     </html>
