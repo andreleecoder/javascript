@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos no teclado</title>
+    <script>
+        function acao1(){
+            alert('o mouse clicou')
+        }
+        function acao2(){
+            alert('o mouse saiu')
+        }
+
+    </script>
+    </head>
+    <body>
+        <div onclick="alert('teste')" style="background:#ccc; width:150px; height:150px;"></div>
+        <div ondblclick="alert('testou')" style="background:#000; width:150px; height:150px;"></div>
+        <div onmouseup="alert('solttou')" style="background:#666; width:150px; height:150px;"></div>
+        <div onmouseover="alert('passou')" style="background:#fe5a52; width:150px; height:150px;"></div>
+        <div onmouseout="acao2()"onclick="acao1()" style="background:purple; width:150px; height:150px;"></div>
+        
+    </body>
+
+    </html>
