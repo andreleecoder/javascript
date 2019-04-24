@@ -8,41 +8,20 @@
    
 </head>
 <body>
-    <input type="text"placeholder="Digite um caracter aqui" onkeyup="distribuiCarater()" id="entrada">
-  <hr>
-  <span>Letras:</span>
-  <input type="text" disabled="disabled" id="apenas_letras">
-  
-  <span>Numeros:</span>
-  <input type="text" disabled="disabled" id="apenas_numeros">
-  
+   <h3>Manipulando estilos</h3>
+   <!--botões modificadores--> 
+   <button type="button" onclick="modificaEstilo('#ff0000')">Vermelho</button>
+   <button type="button" onclick="modificaEstilo('#00ff00')" >Verde</button>
+   <button type="button" onclick="modificaEstilo('#0000ff')">Azul</button>
+   <hr>
+   <!--box modificado-->
+   <div id="quadrado" style="border:solid 1px #000; width: 100px;height: 100px;" ></div>  
   <!--Javascript da aplicação-->
   <script>
-    function distribuiCarater(){
-    //selecione o valor digitado
-    var caracter = document.getElementById('entrada').value
-    //limpar o campo de digitação
-    document.getElementById('entrada').value=''
-  caracter.trim()
-  switch(caracter){
-         case '0':
-         case '1':
-         case '2':
-         case '3':
-         case '4':
-         case '5':
-         case '6':
-         case '7':
-         case '8':
-         case '9':
-         //adicionar caracter no campo referente ao numero
-      document.getElementById('apenas_numeros').value +=caracter
-      break;
-      default:
-      //adicionar caracter no campo referente ao numero
-      document.getElementById('apenas_letras').value +=caracter
-  }
-}  
+   function modificaEstilo(corDeFundo){
+       document.getElementById('quadrado').style.background=corDeFundo
+
+   }
 
 </script>
 </body>
