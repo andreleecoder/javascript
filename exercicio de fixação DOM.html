@@ -6,33 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dom manipulando elementos pela classe</title>
    <style>
-       .estilo1{background: #ff0000;
-                color: #fff;}
-       .estilo2{
-           width: 400px;
-           height: 50px;
-           background: #ff0000;
-           font-size: 25px;
-           color: #fff;
-           padding: 25px;
-       }
    </style>
 </head>
 <body>
-   <h3 id="mensagem" class="estilo1">Manipulando estilos</h3>
+   <h3>Manipulando estilos</h3>
    <!--botões modificadores--> 
-   <button type="button" onclick="modificaClasse()">Aplicar classe</button>
+<input onkeydown="redGreen()" onclick="yellow()" id="color" type="text">
    
-   <hr>
-   <!--box modificado-->
-   <div id="mensagem" ></div>  
+
   <!--Javascript da aplicação-->
   <script>
-   function modificaClasse(){
-       document.getElementById('mensagem').className='estilo2'
-
+   function yellow(){
+        document.getElementById('color').style.background="yellow"}
+   function redGreen(){
+       var entrada= document.getElementById('color').value+=''
+       if(entrada.length<3){
+              //se só houverem 3 caracteres ou menos
+              document.getElementById('color').style.background="red"}
+              //se Houverem mais de 3 caracteres
+              else{
+              document.getElementById('color').style.background="green"
+       }  
    }
-
 </script>
 </body>
 </html>  
