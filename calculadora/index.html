@@ -95,7 +95,16 @@
     
     <script>
       function calcular (tipo,valor){
-    console.log(tipo,valor)
+        if(tipo==='ação'){}
+        if(valor==='c'){
+         document.getElementById('resultado').value=''
+        }else if(tipo==='valor'){
+        //limpar o visor
+        document.getElementById('resultado').value +=valor
+        }if(valor==='+'||valor==='-'||valor==='*'||valor==='/'||valor==='.'){
+          //concatenar valores e ações no visor
+          document.getElementById('resultado').value+=valor
+        }
       }
     </script>
   </body>	
