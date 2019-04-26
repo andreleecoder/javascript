@@ -6,23 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Arrays basico</title>
     <script>
-    var lista_frutas=Array()
+    var lista_coisas=Array()
 
-    lista_frutas['0']='Banana'
+   /* lista_frutas['0']='Banana'
     lista_frutas['1']='maçã'
     lista_frutas['2']='morango'
-    lista_frutas['3']='uva'
+    lista_frutas['3']='uva' */
+
+    lista_coisas['frutas']=Array('uva','maçã')
+    lista_coisas['pessoas']=['Lucifer','Lilith']
+
+    lista_coisas['frutas'].push('melão')
+
+
+    console.log(lista_coisas)
+
 
 //incluir elementos no final do array
    //lista_frutas.push('melão')
-//incluir elementos no inicio do array 
-   lista_frutas.unshift('abacate') 
-//excluir elementos no final do array
-  lista_frutas.pop()
-//excluir elementos no inicio do array 
-  lista_frutas.shift()    
 
-    console.log(lista_frutas)
+   //incluir elementos no inicio do array 
+   //lista_frutas.unshift('abacate') 
+
+   //excluir elementos no final do array
+ // lista_frutas.pop()
+
+  //excluir elementos no inicio do array 
+  //lista_frutas.shift()    
+
+   
  </script>
 </head>
 <body>
