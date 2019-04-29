@@ -3,18 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Arrays atividade</title>
-    <script>
-        //Array a ser manipulado
-        var objetos=['cadeira','impressora','garfo']
-         
-          objetos.push('banana')
-          console.log(objetos)
-        
-   
-
- </script>
-
- <style>
+   <style>
      *{
          margin: 0;
          padding: 0;
@@ -28,7 +17,26 @@
 </head>
 <body>
     <input id="inserir" type="text">
-    <button onclick="recuperarValor" id="adicionar">Adicionar</button>
+    <button onclick="takeValue()" id="adicionar">Adicionar</button>
     <button id="ordenar">Ordenar</button>
+    <!--scripts-->
+
+    <script>
+            //Array a ser manipulado
+            var objetos=['cadeira','impressora','garfo']
+             
+             // objetos.push('banana')
+             
+             function takeValue(){
+             var valor =document.getElementById('inserir').value
+             var add = objetos.push(valor)
+             console.log(objetos)
+             }
+       
+    
+     </script>
+    
+
+
 </body>
 </html>
