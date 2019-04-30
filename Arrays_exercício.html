@@ -25,13 +25,27 @@
             //Array a ser manipulado
             var objetos=['cadeira','impressora','garfo']
              
-             // objetos.push('banana')
-             
              function takeValue(){
              var valor =document.getElementById('inserir').value
+             var verify=objetos.indexOf(valor)
              var add = objetos.push(valor)
-             console.log(objetos)
+             //limpar campo
+             //document.getElementById('inserir').value=''
+             //valor.trim()
+
+             
+             if(valor.length==""){
+                 var remove=objetos.pop(valor)
+                 alert("Informe um valor válido")
+             
              }
+             if(valor.length==verify){
+                 objetos.indexOf(valor)
+                 alert("Objeto já foi adicionado")
+             }
+             console.log(objetos)
+          } 
+
        
     
      </script>
