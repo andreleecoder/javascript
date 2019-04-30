@@ -17,33 +17,40 @@
 </head>
 <body>
     <input id="inserir" type="text">
-    <button onclick="takeValue()" id="adicionar">Adicionar</button>
-    <button id="ordenar">Ordenar</button>
+    <button onclick="takeValue()">Adicionar</button>
+    <button onclick="order()">Ordenar</button>
     <!--scripts-->
 
     <script>
             //Array a ser manipulado
             var objetos=['cadeira','impressora','garfo']
-             
+            
+             //função adicionar
              function takeValue(){
-             var valor =document.getElementById('inserir').value
-             var verify=objetos.indexOf(valor)
-             var add = objetos.push(valor)
-             //limpar campo
-             document.getElementById('inserir').value=''
-             valor.trim()
+            //recuperar o valor inserido no campor
+             var valor = document.getElementById('inserir').value
+            //caso possua algum valor inserido entra no if
+             if(valor !=''){
+             //verifica se o valor ja nao foi inserido anteriormente
+             //se sim, informa que valor ja existe,se nao insere novo valor
+             if (objetos.indexOf(valor)!==-1){
+                 alert('objeto ja foi adicionado')
+                 }else{
+                     objetos.push(valor)
+                     console.log(objetos)
+                  document.getElementById('inserir').value=''   
+                 }    
+          }else{
+              alert('informe um objeto valido')
+            
+              }
+            }
 
-             
-             if(valor.length==""){
-                 
-                 alert("Informe um valor válido")
-             
-             }
-             if(objetos.indexOf(valor)!==-1){
-             var remove=objetos.pop(valor)
-             alert("Objeto já foi adicionado")
-             }
-             console.log(objetos)
+          
+         //função ordenar   
+          function order(){
+            objetos.sort()
+            console.log(objetos)
           } 
 
        
