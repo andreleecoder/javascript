@@ -30,18 +30,18 @@
              var verify=objetos.indexOf(valor)
              var add = objetos.push(valor)
              //limpar campo
-             //document.getElementById('inserir').value=''
-             //valor.trim()
+             document.getElementById('inserir').value=''
+             valor.trim()
 
              
              if(valor.length==""){
-                 var remove=objetos.pop(valor)
+                 
                  alert("Informe um valor válido")
              
              }
-             if(valor.length==verify){
-                 objetos.indexOf(valor)
-                 alert("Objeto já foi adicionado")
+             if(objetos.indexOf(valor)!==-1){
+             var remove=objetos.pop(valor)
+             alert("Objeto já foi adicionado")
              }
              console.log(objetos)
           } 
