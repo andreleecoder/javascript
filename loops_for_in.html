@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> for in</title>
+   <style>
+     
+ </style>
+</head>
+<body>
+   
+    <!--scripts-->
+    <script>
+        /*for in é muito util para acessar objetos fora de ordem contidos em arrays*/
+       // var listaConvidados=['jorge','jamilton','josé','ana','maria']
+
+       var listaConvidados= Array()
+
+       listaConvidados['a']='jorge'
+       listaConvidados[10]='jamilton'
+       listaConvidados['zebra']='josé'
+       listaConvidados[-1]='ana'
+       listaConvidados[true]='maria'
+
+        console.log(listaConvidados)
+
+        for (var x in listaConvidados){
+            console.log('indice '+x+' valor '+listaConvidados[x])
+        }
+    </script>
+    
+
+
+</body>
+</html>
