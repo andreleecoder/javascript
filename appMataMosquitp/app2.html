@@ -17,10 +17,20 @@
 </head>
 <body onresize="ajustaTamanhoTela()">
 
+<div class="painel">
+<div class="vidas">
+    <img src="./imagens/coracao_vazio.png">
+    <img src="./imagens/coracao_cheio.png">
+    <img src="./imagens/coracao_cheio.png">
+</div>
+<div class="cronometro">Tempo restante:</div>
+</div>
 
-    <!--JS fille-->
-
-   <script>posicaoRandomica()</script> 
+ <!--JS fille-->
+  <script>
+   setInterval(function(){ posicaoRandomica()},1000)
+  
+  </script> 
 
    <script src="./jogo.js"></script> 
 </body>
