@@ -1,5 +1,7 @@
 var altura=0
 var largura =0
+var vidas=1
+var tempo=15
 //captar o tamanho da tela do browser
  
 function ajustaTamanhoTela(){
@@ -8,11 +10,35 @@ function ajustaTamanhoTela(){
     console.log(altura,largura)
  }
  ajustaTamanhoTela()
+
+ //criando cronometro
+ var cronometro = setInterval(function(){
+        
+        tempo -= 1 
+        
+        if(tempo < 0){
+            clearInterval(cronometro)
+            clearInterval(criaMosquito)
+            alert('vitoria')
+        }else{
+         document.getElementById('cronos').innerHTML=tempo
+        }
+        
+     }, 1000)
+
 // movimentação aleatoria do mosquito
- function posicaoRandomica(){
+ 
+function posicaoRandomica(){
+
      //remover o mosquito anterior (caso exista)
      if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
+     //de coração cheio para vazio(perdeu uma vida)
+     if(vidas>3){
+         window.location.href="fim_de_jogo.html"
+     }else{
+     document.getElementById('v'+vidas).src="./imagens/coracao_vazio.png"
+       vidas++}
      }
      var posicaox=Math.floor(Math.random() * largura)-90
      var posicaoy=Math.floor(Math.random() * altura)-90
@@ -40,6 +66,9 @@ function ajustaTamanhoTela(){
      mosquito.style.left=posicaox+'px'
      mosquito.style.top=posicaoy+'px'
      mosquito.style.position='absolute'
+     mosquito.onclick=function(){
+         this.remove()
+     }
 
      document.body.appendChild(mosquito)
  }

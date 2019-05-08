@@ -19,16 +19,18 @@
 
 <div class="painel">
 <div class="vidas">
-    <img src="./imagens/coracao_vazio.png">
-    <img src="./imagens/coracao_cheio.png">
-    <img src="./imagens/coracao_cheio.png">
+    <img id="v1" src="./imagens/coracao_cheio.png">
+    <img id="v2" src="./imagens/coracao_cheio.png">
+    <img id="v3" src="./imagens/coracao_cheio.png">
 </div>
-<div class="cronometro">Tempo restante:</div>
+<div class="cronometro">Tempo restante: <span id="cronos"></span> </div>
 </div>
 
  <!--JS fille-->
   <script>
-   setInterval(function(){ posicaoRandomica()},1000)
+      document.getElementById("cronos").innerHTML=tempo
+   
+     var criaMosquito= setInterval(function(){ posicaoRandomica()},2000)
   
   </script> 
 
