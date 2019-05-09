@@ -21,14 +21,14 @@ function ajustaTamanhoTela(){
             clearInterval(criaMosquito)
             alert('vitoria')
         }else{
-         document.getElementById('cronos').innerHTML=tempo
+         document.getElementById("cronos").innerHTML=tempo
         }
         
      }, 1000)
 
 // movimentação aleatoria do mosquito
  
-function posicaoRandomica(){
+ function posicaoRandomica(){
 
      //remover o mosquito anterior (caso exista)
      if(document.getElementById('mosquito')){
