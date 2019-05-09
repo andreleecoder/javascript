@@ -2,9 +2,25 @@ var altura=0
 var largura =0
 var vidas=1
 var tempo=15
+
+//niveis do jogo
+var criaMosquitoTempo=1500//1,5seg
+
+//acessar os valores dos niveis
+var nivel=window.location.search
+nivel=nivel.replace('?','')
+
+//lógica de mudança de nivel
+if(nivel==='normal'){
+    criaMosquitoTempo=1500
+}if(nivel==='dificil'){
+    criaMosquitoTempo=1000//1seg
+}if(nivel==='chucknorris'){
+    criaMosquitoTempo=750//1/3 de segundo
+}
+
 //captar o tamanho da tela do browser
- 
-function ajustaTamanhoTela(){
+ function ajustaTamanhoTela(){
     altura=window.innerHeight 
     largura=window.innerWidth
     console.log(altura,largura)
@@ -19,7 +35,7 @@ function ajustaTamanhoTela(){
         if(tempo < 0){
             clearInterval(cronometro)
             clearInterval(criaMosquito)
-            alert('vitoria')
+            window.location.href="vitoria.html"
         }else{
          document.getElementById("cronos").innerHTML=tempo
         }
