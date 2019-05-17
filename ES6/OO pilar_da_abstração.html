@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tempate string</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+    //modelo do objeto
+    class ContaBancaria{
+        //agencia
+        //numeroConta
+        //saldo
+        //limite
+
+        //atributos
+        constructor(){
+            this.agencia=157
+            this.numeroConta=856452
+            this.saldo=50
+            this.limite=450
+        }
+        //metodos
+        depositar(valorDeposito){
+            this.saldo +=valorDeposito
+        }
+        sacar(valorSaque){
+            this.Saldo -=valorSaque
+
+        }
+        consultarSaldo(){
+            return this.saldo
+        }
+
+    }
+    let x = new ContaBancaria()
+    let y = new ContaBancaria()
+     console.log(x.consultarSaldo())
+     x.depositar(450)
+     console.log(x.consultarSaldo())
+     x.sacar(-100)
+     console.log(x.consultarSaldo())
+
+     </script>
+
+</head>
+<body>
+  
+   
+</body>
+</html>
