@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom manipulando valores de inputs</title>
+   
+</head>
+<body>
+   <h3>Manipulando estilos</h3>
+   <!--botões modificadores--> 
+   <button type="button" onclick="modificaEstilo('#ff0000')">Vermelho</button>
+   <button type="button" onclick="modificaEstilo('#00ff00')" >Verde</button>
+   <button type="button" onclick="modificaEstilo('#0000ff')">Azul</button>
+   <hr>
+   <!--box modificado-->
+   <div id="quadrado" style="border:solid 1px #000; width: 100px;height: 100px;" ></div>  
+  <!--Javascript da aplicação-->
+  <script>
+   function modificaEstilo(corDeFundo){
+       document.getElementById('quadrado').style.background=corDeFundo
+
+   }
+
+</script>
+</body>
+</html>  

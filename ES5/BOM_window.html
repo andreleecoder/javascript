@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOM WINDOW</title>
+    <script>
+        /*mais referencias no site da documentação
+        https://www.w3schools.com/js/js_window.asp
+        */
+   var janela
+   function abrirPopUp(){
+       janela=window.open('','nova_janela','width=100,height=100')
+
+   }
+   function fecharPopUp(){
+       janela.close()
+   }
+   
+ </script>
+</head>
+<body>
+    <button onclick="abrirPopUp()">Abrir Janela</button>
+    <button onclick="fecharPopUp()">Fechar Janela</button>
+    <button onclick="window.print()">Imprimir Pagina</button>
+</body>
+</html>

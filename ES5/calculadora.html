@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculadora</title>
+    <script>
+    //variaveis
+    var num1 = prompt('digite o primeiro numero')
+    var operação= prompt('digite a operção, soma ou subtração')
+    var num2 = prompt('digite o segundo valor')
+    
+    //convertendo strings para numeros
+     var num1 = parseFloat(num1)
+     var num2 = parseFloat(num2)
+    
+    
+     //função dos calculos
+     function calcular (num1,num2,operação){
+        var resultado = 0
+         if( operação=='soma'){
+             resultado=num1+num2}
+         if(operação=='subtrção'){
+           resultado=num1-num2}
+           return resultado}
+           document.write('o valor da operação é: '+calcular(num1,num2,operação)) 
+
+
+    </script>
+    </head>
+    <body>
+        
+    </body>
+
+    </html>
