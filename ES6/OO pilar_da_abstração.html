@@ -26,7 +26,7 @@
             this.saldo +=valorDeposito
         }
         sacar(valorSaque){
-            this.Saldo -=valorSaque
+            this.saldo -=valorSaque
 
         }
         consultarSaldo(){
@@ -36,10 +36,9 @@
     }
     let x = new ContaBancaria()
     let y = new ContaBancaria()
-     console.log(x.consultarSaldo())
      x.depositar(450)
      console.log(x.consultarSaldo())
-     x.sacar(-100)
+     x.sacar(200)
      console.log(x.consultarSaldo())
 
      </script>
