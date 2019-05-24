@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pilar da abstração reflexão</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+
+        class Tv{
+            contructor(){
+                this._relacaoCanais=Array(2,4,5,7,10)
+                this._canalAtivo=5
+                this._volume=5
+                }
+                //getters e setters
+                get canalAtivo(){
+                    return this._canalAtivo
+                }
+                set canalAtivo(canal){
+                  if(this._relacaoCanais.indexOf(canal)!==-1){
+                    this._canalAtivo=canal
+                 }
+               }
+             }
+             let tv = new Tv()
+             tv.canalAtivo=3
+             console.log(tv.canalAtivo)
+        
+    </script>
+
+</head>
+<body>
+  
+   
+</body>
+</html>
