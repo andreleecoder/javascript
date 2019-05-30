@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pilar da herança</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+         class Animal{
+            constructor(){
+                this.cor=""
+                this.tamanho=null
+                this.peso=null
+            }
+            dormir(){
+                console.log('dormir')
+            }
+        }
+
+
+        class Cachorro extends Animal{
+            constructor(){
+                super()
+                this.orelhas="grandes e caidas"
+            }
+            rosnar(){
+                console.log('rosnar')
+            }
+        
+        }
+        class Passaro extends Animal{
+            constructor(){
+                super()
+                this.bico="pequeno"
+            }
+        
+        }
+        class Papagaio extends Passaro{
+            constructor(){
+                super()
+                this.sabeFalar=true
+
+            }
+            falar(){
+                console.log("falar")
+            }
+        }
+        let cachorro=new Cachorro()
+        let passaro= new Passaro()
+        let papagaio= new Papagaio()
+
+      /* cachorro.dormir()
+       passaro.dormir()
+       papagaio.falar()
+       papagaio.dormir()
+       papagaio.voar()*/
+       console.log(cachorro)
+       console.log(passaro)
+       console.log(papagaio)
+    </script>
+
+</head>
+<body>
+  
+   
+</body>
+</html>
