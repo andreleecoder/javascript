@@ -90,9 +90,21 @@
           pessoa2.dizerOi=()=>console.log('ois')
           pessoa2.dizerOi()
 
-          //objeto literal unico, ler paragrafo abaixo
+          //objeto literal unico, ler paragrafo do body
 
-          
+          let assinatura={
+              idCliente:1000,
+              descriçao:'acesso a internet',
+              status(){
+                  console.log('Ativo')
+              }
+          }
+          console.log(assinatura.descriçao)
+          let y = assinatura
+          y.descriçao='internet+tv+telefone'
+          console.log(assinatura.descriçao)
+          console.log(y.descriçao)
+
 
     </script>
 
