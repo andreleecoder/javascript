@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pilar do polimorfismo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+          class Animal{
+            constructor(cor,tamanho,peso){
+                this.cor=cor
+                this.tamanho=tamanho
+                this.peso=peso
+            }
+            dormir(){
+                console.log('dormir')
+            }
+        }
+
+        class Passaro extends Animal{
+            constructor(bico,cor,tamanho,peso){
+                super(cor,tamanho,peso)
+                this.bico=bico
+            }
+            voar(){
+                console.log("voar")
+            }
+        
+        }
+        class Papagaio extends Passaro{
+            constructor(sabefalar,cor,tamanho,peso){
+                super('medio',cor,tamanho,peso)
+                this.sabeFalar=sabefalar
+
+            }
+            falar(){
+                console.log("falar")
+            }
+        }
+        class Avestruz extends Passaro{
+            constructor(){
+                super('grande','baranco e preto',250,15000)
+
+            }
+            enterrarCabeça(){
+                console.log("Enterrar a cabeça")
+            }
+            voar(){
+                console.log('nao sabe voar')
+            }
+        }
+        let papagaio= new Papagaio(true,"verde",30,350)
+        console.log(papagaio)
+
+        papagaio.voar()
+        let avestruz=new Avestruz()
+        avestruz.enterrarCabeça()
+        avestruz.voar()
+    </script>
+
+</head>
+<body>
+  
+   
+</body>
+</html>

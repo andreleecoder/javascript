@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>objeto literal</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+         /* class Produto{
+              constructor(descricao,preco){
+                  this.descricao=descricao
+                  this.preco=preco
+            }
+            verDescricao(){
+                console.log(`${this.descricao} por apenas ${this.preco}`)
+            }
+          }
+          let produto=new Produto('notebook',2200)
+          produto.verDescricao()
+
+          let produtoLiteral={
+              descricao:'geladeira',
+              preco:1800,
+              verDescricao:function () {
+                console.log(`${this.descricao} por apenas ${this.preco}`)
+              } 
+          }
+          produtoLiteral.verDescricao()*/
+
+          //objetos literais melhorias es6
+          let nome="André"
+          let idade=27
+          let sexo= "masculino"
+          let profissão= "passador de raiva"
+           
+           //método antigo
+         /* let objeto={
+              nome:nome,
+              idade:idade,
+              sexo:sexo,
+              profissão:profissão,
+
+              exibirResumo:function(){
+                  console.log(`${this.nome},${this.idade} anos, ${this.sexo} é ${this.profissão} `)
+              }
+
+          }*/
+
+          //metodo novo ES6
+          /*se o nome do par valor forem iguais, declara se assim deixando o código muito mais enxuto*/
+         
+          let objeto={
+              nome,//nome=nome da variavel/valor=valor da variavel
+              idade,
+              sexo,
+              profissão,
+               //a segunda melhoria é a forma de declarar funções(métodos) como pode se ver abaixo em comparação com o exemplo acima
+              exibirResumo(){
+                  console.log(`${this.nome},${this.idade} anos, ${this.sexo} é ${this.profissão} `)
+              }
+
+          }
+
+
+          console.log(objeto)
+          objeto.exibirResumo()
+
+          //modificando valores
+          let pessoa={
+              nome:'José',
+              idade:25,
+          }
+          console.log(pessoa.nome)
+          pessoa.nome='Fernanda'//desse jeito
+          console.log(pessoa.nome)
+          pessoa.idade=23
+          console.log(pessoa.idade)
+          
+         //inclusão de novos conjuntos nome par e valor
+         let pessoa2={
+              nome:'Maria',
+              idade:35,
+          }
+        
+          pessoa2.sexo ='feminino'//desse jeito
+          console.log(pessoa2)
+
+          //incluindo funções
+          pessoa2.dizerOi=()=>console.log('ois')
+          pessoa2.dizerOi()
+
+          //objeto literal unico, ler paragrafo abaixo
+
+          
+
+    </script>
+
+</head>
+<body>
+  
+   <p>Objestos literais são unicos, entao mesmo que voce o declare atravé de uma outra variável
+       voce continua trabalhando em cima do mesmo objeto
+       exemplo
+       let objeto={
+        nome:nome,
+        idade:idade,
+        sexo:sexo,
+        profissão:profissão,}
+
+        let x=objeto(nao foi criada uma copia do obj objeto, voce continuará trabalhando em cima
+        do mesmo obj objeto)
+
+
+   </p>
+</body>
+</html>
