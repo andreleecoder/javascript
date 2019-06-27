@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rest spread p1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+   
+
+
+</head>
+<body>
+    
+   <script type="text/babel">
+   //usando o operador spread
+    let tituloArtigo='como utilizar o operador rest/spread'
+    console.log(...tituloArtigo)
+    console.log(tituloArtigo)
+    console.log([...tituloArtigo])
+    let listaCurso1=['nodeJs e mongodb','es6,typescript e Angular 4']
+    let listaCurso2=['Multplataforma Android/IOS','Introdução ao Gnu Linux']
+    let listaCursoCompleto=['web completo ','Android completo',...listaCurso1, ...listaCurso2]
+            console.log(listaCurso1)
+            console.log(listaCurso2)
+            console.log(listaCursoCompleto)
+     let pessoa={nome:'João',idade:'27'}
+     let clone={endereço:"Rua ABC",...pessoa}
+     console.log(clone)
+
+   </script>
+</body>
+</html>
