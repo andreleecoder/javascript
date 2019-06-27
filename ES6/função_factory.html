@@ -28,9 +28,34 @@
                 aro:26,
                 pedalar(){console.log('metodo pedalar executado ')}
             }
+            let bicicletaFactory=(cor,marcha,aro)=>{
+       /* return {cor:cor,
+                marcha:marcha,
+                aro:aro,
+                pedalar(){console.log('metodo pedalar executado ')}
+              } */
+              //sintax mais enxuta vvv
+
+        return {cor,
+                marcha,
+                aro,
+                pedalar(){console.log('metodo pedalar executado ')}
+              }
+                
+            }
             
+            let bicicleta3=bicicletaFactory('verde','unica','26')
+            let bicicleta4=bicicletaFactory('azul','12','18')
+
             console.log(bicicleta1)
             console.log(bicicleta2)
+            console.log(bicicleta3)
+            console.log(`cor:${bicicleta3.cor}`)
+            bicicleta3.pedalar()
+
+            console.log(bicicleta4)
+            console.log(`marcha:${bicicleta4.marcha}`)
+            bicicleta4.pedalar()
             
          </script>
 </body>
