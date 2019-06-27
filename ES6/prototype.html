@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>prototype</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+   
+
+
+</head>
+<body>
+   <script type="text/babel">
+     //objeto literal
+     let a1={
+         cor:"branca",
+         modelo:"boing 787",
+         levantarVoo:()=>{console.log("levantar voo")}
+     }   
+     //função construtora
+     let aviaoF=function(){
+         this.cor='vermelha',
+         this.modelo='boing 747',
+         this.levantarVoo=()=>{console.log("levantar voo")}
+     }    
+        let a2 =new aviaoF()
+
+     class aviaoc{
+         constructor(){
+            this.cor='verde',
+            this.modelo='embraer e-jets'
+            }
+            levantarVoo()
+            {console.log("levantar voo")} 
+        }
+        let a3 = new aviaoc()
+        console.log(a1)
+        console.log(a2)
+        console.log(a3)
+            
+   </script>
+</body>
+</html>
