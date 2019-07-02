@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>destructuring 2 </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+   
+
+
+</head>
+
+<body>
+    
+   <script type="text/babel">
+    
+    let produto={
+        Descrição:'notebook',
+        preço:1800,
+        Detalhes:{
+            fabricante:'abc',
+            modelo:'xyz'
+        }
+    }
+    //let {Descrição,preço}=produto
+    //let {Descrição:d,preço:p}=produto
+    //let {Descrição:d,preço:p,desconto=30}=produto
+    let {Detalhes:{fabricante,modelo}}=produto
+    console.log(fabricante,modelo)
+   </script>
+</body>
+</html>
