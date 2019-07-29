@@ -1,0 +1,13 @@
+ALGORITMO: PEGAR ONIBUS
+ir ate a parada
+    ENQUANTO onibus nao chega
+        esperar onibus
+        subir no onibus
+        pegar passagem
+    SE nao há passagem
+        pegar dinheiro
+        pagar ao cobrador
+        var troco = dinheiro - valor passagem
+    ENQUANTO o bnaco não está vazio
+        IR PARA O PROXIMO
+    sentar
