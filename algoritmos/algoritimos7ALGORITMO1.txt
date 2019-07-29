@@ -1,3 +1,4 @@
+//PROFESSOR
 ALGORITMO: PEGAR ONIBUS
 ir ate a parada
     ENQUANTO onibus nao chega
@@ -7,7 +8,52 @@ ir ate a parada
     SE nao há passagem
         pegar dinheiro
         pagar ao cobrador
-        var troco = dinheiro - valor passagem
-    ENQUANTO o bnaco não está vazio
+        TROCO = dinheiro - valor passagem
+    ENQUANTO o banco não está vazio
         IR PARA O PROXIMO
     sentar
+
+//ALUNO
+
+//VARIAVEIS
+onibus= INSERIR NUMERO DO ONIBUS
+onibusCerto=312
+passagem=10
+dinherio=INSERIR valor
+
+
+//ALGORITMO
+funcao esperarOnibus(){
+ir ate a parada
+    SE (onibus==onibusCerto){
+       retornar subir no onibus=true
+
+    }CASO CONTRARIO{
+        esperar onibus
+    }
+  }
+ 
+  funcao pagarPassagem(){
+     
+      SE(passagem == true){
+          dar PASSAGEM ao trocador
+      }CASO CONTRARIO{
+          dar DINHEIRO
+      }
+  funcao escolherLugarNoOnibus(banco,ocupado,vazio){
+     
+      ENQUANTO(BANCO==OCUPADO){
+          IR PARA O PROXIMO
+      }
+       sentar
+    }
+  
+
+
+
+
+
+
+
+ 
+
