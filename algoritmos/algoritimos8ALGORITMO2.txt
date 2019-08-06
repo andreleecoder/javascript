@@ -19,15 +19,7 @@ troco = dinheiro - passagem
 SE (idade <= 65 E idade<=7){
     DIZER:O preço é grátis 
 }CASO CONTRARIO{
-    ENQUANTO(DINHEIRO<PASSAGEM){
-     peça o dinheiro ao passageiro
-    }
-   SE(DINHEIRO==PASSAGEM){
-       liberar entrada do passageiro
-   } 
-
-
-
+    O valor da passagem é, PASSAGEM reais
 }
 
 
