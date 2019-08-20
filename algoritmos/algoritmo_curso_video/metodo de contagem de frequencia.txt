@@ -32,7 +32,9 @@ Algoritmo Add (a,b,n){
 Algoritmo Add (a,b,n){
     for(i=0;i<n;i++){
         for(i=0;j<n;j++){
-            c[i,j]=a[i,j]+b[i,j]
+             c[i,j]=0;
+            for(k=0;k<n;k++)
+           
         }
         
     }
