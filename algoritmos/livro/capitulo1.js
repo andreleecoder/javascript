@@ -1,4 +1,4 @@
-/*var myVariable="global";
+var myVariable="global";
 var myOtherVariable="global";
 
 function myFunction(){
@@ -16,7 +16,7 @@ console.log(myVariable);
 console.log(myFunction());
 console.log(myOtherVariable);
 console.log(myOtherFunction());
-*/
+
 var i=0;
 
 
