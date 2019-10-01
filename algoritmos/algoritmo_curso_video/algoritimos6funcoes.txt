@@ -1,9 +1,0 @@
- FUNCAO somar(a,b){
-     RESULTADO=a+b
- }
- resultadoDaSoma=somar(3,4)
- MOSTRAR NA TELA:
- resultadoDaSoma
-
- TELA:
-  7

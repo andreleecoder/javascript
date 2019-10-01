@@ -57,19 +57,34 @@ let circleArea = r=>{
 }
 console.log(circleArea(3));
 */
-function repeatStringNumTimes(str, num) {
-    // repeat after me
-   let newStr=''
-   while (num>0) {
-       newStr+=str
-       num--
-       
-   }
- 
-    return newStr;
-  }
-  
- console.log( repeatStringNumTimes("abc", 6));
+function sum(x,y,z) {
+    return x+y+z
+}
+let params=[3,4,5]
+console.log(sum(...params));
+
+function restParametersFunction(x,y,...a) {
+    return (x+y)*a.length
+    
+}
+console.log(restParametersFunction(1,2,'hello',true,7));
+
+let [x,y]=['a','b']
+let obj={x,y}
+console.log(obj);
+
+const hello={
+    name:'abcdef',
+    printHello(){
+        console.log("hello");
+        
+    }
+}
+
+console.log(hello.printHello());
+
+
+
  
 
 
