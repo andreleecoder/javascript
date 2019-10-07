@@ -1,5 +1,5 @@
 // programação orientada a objetos com classes
-class Book{
+/*class Book{
     constructor(title,pages,isbn ){
         this.title=title
         this.pages=pages
@@ -50,6 +50,33 @@ lotchar.name='Gandalf'
 console.log(lotchar.name)
 lotchar._name='Sam'
 console.log(lotchar.name)
+
+//funões getters and setters em classes
+
+class Person{
+    constructor(name){
+        this._name=name
+    }
+    get name(){
+        return this._name
+    }
+    set name(value){
+        return this._name=value
+    }
+}
+let lotChar= new Person('Frodo')
+console.log(lotChar.name);
+lotChar.name='Gandalf'
+console.log(lotChar.name);
+lotChar.name='Sam'
+console.log(lotChar.name);
+*/
+//operador exponencial
+
+
+
+
+
 
 
 
