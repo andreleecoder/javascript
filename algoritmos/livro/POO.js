@@ -1,4 +1,4 @@
-import {circleArea , squareArea} from './modulos';
+const fun = require('./modulos')
 
     console.log(circleArea(2))
 
